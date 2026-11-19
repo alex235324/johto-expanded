@@ -1,0 +1,254 @@
+# Gen 3-5 import report
+
+Species 252-649 (398), Gen 5 stats/types, Black 2/White 2 learnsets.
+Move substitutions: see `move_substitutions.csv` (edit `move_overrides.csv` to change).
+
+## base exp (41)
+
+- Arceus: 324 capped to 255
+- Audino: 390 capped to 255
+- Azelf: 261 capped to 255
+- Cobalion: 261 capped to 255
+- Cresselia: 270 capped to 255
+- Darkrai: 270 capped to 255
+- Deoxys: 270 capped to 255
+- Dialga: 306 capped to 255
+- Garchomp: 270 capped to 255
+- Genesect: 270 capped to 255
+- Giratina: 306 capped to 255
+- Groudon: 302 capped to 255
+- Heatran: 270 capped to 255
+- Hydreigon: 270 capped to 255
+- Jirachi: 270 capped to 255
+- Keldeo: 261 capped to 255
+- Kyogre: 302 capped to 255
+- Kyurem: 297 capped to 255
+- Landorus: 270 capped to 255
+- Latias: 270 capped to 255
+- Latios: 270 capped to 255
+- Manaphy: 270 capped to 255
+- Meloetta: 270 capped to 255
+- Mesprit: 261 capped to 255
+- Metagross: 270 capped to 255
+- Palkia: 306 capped to 255
+- Rayquaza: 306 capped to 255
+- Regice: 261 capped to 255
+- Regigigas: 302 capped to 255
+- Regirock: 261 capped to 255
+- Registeel: 261 capped to 255
+- Reshiram: 306 capped to 255
+- Salamence: 270 capped to 255
+- Shaymin: 270 capped to 255
+- Terrakion: 261 capped to 255
+- Thundurus: 261 capped to 255
+- Tornadus: 261 capped to 255
+- Uxie: 261 capped to 255
+- Victini: 270 capped to 255
+- Virizion: 261 capped to 255
+- Zekrom: 306 capped to 255
+
+## dex category (16)
+
+- Bouffalant: 'BASH BUFFALO' too long, using 'BASHBUFFALO'
+- Cryogonal: 'CRYSTALLIZING' too long, using 'CRYSTALLIZI'
+- Drapion: 'OGRE SCORPION' too long, using 'OGRESCORPIO'
+- Emboar: 'MEGA FIRE PIG' too long, using 'MEGAFIREPIG'
+- Emolga: 'SKY SQUIRREL' too long, using 'SKYSQUIRREL'
+- Gliscor: 'FANG SCORPION' too long, using 'FANGSCORPIO'
+- Krookodile: 'INTIMIDATION' too long, using 'INTIMIDATIO'
+- Mandibuzz: 'BONE VULTURE' too long, using 'BONEVULTURE'
+- Mienfoo: 'MARTIAL ARTS' too long, using 'MARTIALARTS'
+- Mienshao: 'MARTIAL ARTS' too long, using 'MARTIALARTS'
+- Pansage: 'GRASS MONKEY' too long, using 'GRASSMONKEY'
+- Simisage: 'THORN MONKEY' too long, using 'THORNMONKEY'
+- Swadloon: 'LEAF-WRAPPED' too long, using 'LEAF-WRAPPE'
+- Taillow: 'TINY SWALLOW' too long, using 'TINYSWALLOW'
+- Zigzagoon: 'TINY RACCOON' too long, using 'TINYRACCOON'
+- Zoroark: 'ILLUSION FOX' too long, using 'ILLUSIONFOX'
+
+## dex text (53)
+
+- Basculin: shortened flavor text to fit 6 lines
+- Beartic: shortened flavor text to fit 6 lines
+- Blitzle: shortened flavor text to fit 6 lines
+- Cottonee: shortened flavor text to fit 6 lines
+- Darmanitan: shortened flavor text to fit 6 lines
+- Deerling: flavor text truncated hard
+- Druddigon: shortened flavor text to fit 6 lines
+- Eelektrik: flavor text truncated hard
+- Emolga: flavor text truncated hard
+- Escavalier: flavor text truncated hard
+- Excadrill: flavor text truncated hard
+- Genesect: shortened flavor text to fit 6 lines
+- Gothitelle: shortened flavor text to fit 6 lines
+- Gothorita: flavor text truncated hard
+- Gulpin: shortened flavor text to fit 6 lines
+- Hariyama: shortened flavor text to fit 6 lines
+- Haxorus: shortened flavor text to fit 6 lines
+- Heatmor: shortened flavor text to fit 6 lines
+- Hydreigon: shortened flavor text to fit 6 lines
+- Jellicent: shortened flavor text to fit 6 lines
+- Joltik: flavor text truncated hard
+- Keldeo: shortened flavor text to fit 6 lines
+- Klang: shortened flavor text to fit 6 lines
+- Krokorok: shortened flavor text to fit 6 lines
+- Landorus: flavor text truncated hard
+- Larvesta: flavor text truncated hard
+- Latios: shortened flavor text to fit 6 lines
+- Leavanny: flavor text truncated hard
+- Lilligant: flavor text truncated hard
+- Lillipup: flavor text truncated hard
+- Mandibuzz: shortened flavor text to fit 6 lines
+- Maractus: flavor text truncated hard
+- Oshawott: flavor text truncated hard
+- Patrat: flavor text truncated hard
+- Pignite: shortened flavor text to fit 6 lines
+- Purrloin: shortened flavor text to fit 6 lines
+- Reuniclus: shortened flavor text to fit 6 lines
+- Rufflet: shortened flavor text to fit 6 lines
+- Sawsbuck: flavor text truncated hard
+- Scrafty: shortened flavor text to fit 6 lines
+- Seedot: shortened flavor text to fit 6 lines
+- Serperior: flavor text truncated hard
+- Sigilyph: flavor text truncated hard
+- Stunfisk: flavor text truncated hard
+- Swoobat: flavor text truncated hard
+- Vanillite: shortened flavor text to fit 6 lines
+- Vanilluxe: flavor text truncated hard
+- Volcarona: flavor text truncated hard
+- Whimsicott: shortened flavor text to fit 6 lines
+- Woobat: flavor text truncated hard
+- Yamask: shortened flavor text to fit 6 lines
+- Zebstrika: flavor text truncated hard
+- Zekrom: shortened flavor text to fit 6 lines
+
+## evolutions (39)
+
+- Aipom -> Ambipom: level up knowing DOUBLESLAP -> level 32
+- Bonsly -> Sudowoodo: level up knowing MIMIC -> level 33
+- Burmy: gender split -> Wormadam if Atk < Def, Mothim otherwise (level 20)
+- Clamperl -> Gorebyss: trade holding deep-sea-scale (not in Crystal) -> holding MYSTIC_WATER
+- Clamperl -> Huntail: trade holding deep-sea-tooth (not in Crystal) -> holding DRAGON_FANG
+- Combee -> Vespiquen: gender requirement dropped
+- Dusclops -> Dusknoir: trade holding reaper-cloth (not in Crystal) -> holding SPELL_TAG
+- Eevee -> Glaceon: level up at a special location -> MOON_STONE
+- Eevee -> Leafeon: level up at a special location -> LEAF_STONE
+- Electabuzz -> Electivire: trade holding electirizer (not in Crystal) -> holding MAGNET
+- Feebas -> Milotic: beauty -> level 30
+- Gligar -> Gliscor: level up holding razor-fang (night) -> high friendship
+- Happiny -> Chansey: level up holding oval-stone (day) -> high friendship
+- Karrablast -> Escavalier: trade for a specific species -> plain trade
+- Kirlia -> Gallade: dawn-stone (not in Crystal) -> SUN_STONE
+- Kirlia -> Gallade: gender requirement dropped
+- Lampent -> Chandelure: dusk-stone (not in Crystal) -> MOON_STONE
+- Lickitung -> Lickilicky: level up knowing ROLLOUT -> level 33
+- Magmar -> Magmortar: trade holding magmarizer (not in Crystal) -> holding CHARCOAL
+- Magneton -> Magnezone: level up at a special location -> THUNDERSTONE
+- Mantyke -> Mantine: level up with a specific party member -> level 20
+- Mime Jr. -> Mr. Mime: level up knowing MIMIC -> level 15
+- Minccino -> Cinccino: shiny-stone (not in Crystal) -> MOON_STONE
+- Misdreavus -> Mismagius: dusk-stone (not in Crystal) -> MOON_STONE
+- Murkrow -> Honchkrow: dusk-stone (not in Crystal) -> MOON_STONE
+- Nincada -> Shedinja: only obtainable via Shedinja mechanic, skipped
+- Nosepass -> Probopass: level up at a special location -> THUNDERSTONE
+- Piloswine -> Mamoswine: level up knowing ANCIENTPOWER -> level 34
+- Porygon2 -> Porygon-Z: trade holding dubious-disc (not in Crystal) -> holding UP_GRADE
+- Rhydon -> Rhyperior: trade holding protector (not in Crystal) -> holding METAL_COAT
+- Roselia -> Roserade: shiny-stone (not in Crystal) -> MOON_STONE
+- Shelmet -> Accelgor: trade for a specific species -> plain trade
+- Sneasel -> Weavile: level up holding razor-claw (night) -> high friendship
+- Snorunt -> Froslass: dawn-stone (not in Crystal) -> SUN_STONE
+- Snorunt -> Froslass: gender requirement dropped
+- Tangela -> Tangrowth: level up knowing ANCIENTPOWER -> level 40
+- Togetic -> Togekiss: shiny-stone (not in Crystal) -> MOON_STONE
+- Wurmple: random split -> Silcoon if Atk >= Def, Cascoon if Atk < Def (level 7)
+- Yanma -> Yanmega: level up knowing ANCIENTPOWER -> level 33
+
+## held items (86)
+
+- Amoonguss: balm-mushroom doesn't exist in Crystal, dropped
+- Amoonguss: tiny-mushroom doesn't exist in Crystal, dropped
+- Basculin: deep-sea-tooth doesn't exist in Crystal, dropped
+- Beautifly: shed-shell doesn't exist in Crystal, dropped
+- Breloom: kebia-berry doesn't exist in Crystal, dropped
+- Buizel: wacan-berry doesn't exist in Crystal, dropped
+- Buneary: chople-berry doesn't exist in Crystal, dropped
+- Cacnea: sticky-barb doesn't exist in Crystal, dropped
+- Cacturne: sticky-barb doesn't exist in Crystal, dropped
+- Carvanha: deep-sea-tooth doesn't exist in Crystal, dropped
+- Chatot: metronome doesn't exist in Crystal, dropped
+- Chimecho: colbur-berry doesn't exist in Crystal, dropped
+- Chingling: colbur-berry doesn't exist in Crystal, dropped
+- Combee: honey doesn't exist in Crystal, dropped
+- Cradily: big-root doesn't exist in Crystal, dropped
+- Croagunk: black-sludge doesn't exist in Crystal, dropped
+- Crustle: rare-bone doesn't exist in Crystal, dropped
+- Drifblim: air-balloon doesn't exist in Crystal, dropped
+- Dusclops: kasib-berry doesn't exist in Crystal, dropped
+- Dusknoir: kasib-berry doesn't exist in Crystal, dropped
+- Duskull: kasib-berry doesn't exist in Crystal, dropped
+- Dustox: shed-shell doesn't exist in Crystal, dropped
+- Dwebble: rare-bone doesn't exist in Crystal, dropped
+- Electivire: electirizer doesn't exist in Crystal, dropped
+- Ferroseed: sticky-barb doesn't exist in Crystal, dropped
+- Ferrothorn: sticky-barb doesn't exist in Crystal, dropped
+- Finneon: rindo-berry doesn't exist in Crystal, dropped
+- Floatzel: wacan-berry doesn't exist in Crystal, dropped
+- Foongus: balm-mushroom doesn't exist in Crystal, dropped
+- Foongus: tiny-mushroom doesn't exist in Crystal, dropped
+- Froslass: babiri-berry doesn't exist in Crystal, dropped
+- Gabite: haban-berry doesn't exist in Crystal, dropped
+- Garbodor: big-nugget doesn't exist in Crystal, dropped
+- Garbodor: black-sludge doesn't exist in Crystal, dropped
+- Garchomp: haban-berry doesn't exist in Crystal, dropped
+- Gible: haban-berry doesn't exist in Crystal, dropped
+- Glalie: babiri-berry doesn't exist in Crystal, dropped
+- Golett: light-clay doesn't exist in Crystal, dropped
+- Golurk: light-clay doesn't exist in Crystal, dropped
+- Gorebyss: deep-sea-scale doesn't exist in Crystal, dropped
+- Grumpig: tanga-berry doesn't exist in Crystal, dropped
+- Happiny: oval-stone doesn't exist in Crystal, dropped
+- Heatmor: flame-orb doesn't exist in Crystal, dropped
+- Huntail: deep-sea-tooth doesn't exist in Crystal, dropped
+- Kricketot: metronome doesn't exist in Crystal, dropped
+- Kricketune: metronome doesn't exist in Crystal, dropped
+- Leavanny: mental-herb doesn't exist in Crystal, dropped
+- Lickilicky: lagging-tail doesn't exist in Crystal, dropped
+- Lileep: big-root doesn't exist in Crystal, dropped
+- Lopunny: chople-berry doesn't exist in Crystal, dropped
+- Lumineon: rindo-berry doesn't exist in Crystal, dropped
+- Lunatone: comet-shard doesn't exist in Crystal, dropped
+- Luvdisc: heart-scale doesn't exist in Crystal, dropped
+- Magmortar: magmarizer doesn't exist in Crystal, dropped
+- Mawile: occa-berry doesn't exist in Crystal, dropped
+- Panpour: rindo-berry doesn't exist in Crystal, dropped
+- Pansage: occa-berry doesn't exist in Crystal, dropped
+- Pansear: passho-berry doesn't exist in Crystal, dropped
+- Relicanth: deep-sea-scale doesn't exist in Crystal, dropped
+- Roselia: absorb-bulb doesn't exist in Crystal, dropped
+- Roserade: absorb-bulb doesn't exist in Crystal, dropped
+- Sawk: black-belt doesn't exist in Crystal, dropped
+- Sawk: expert-belt doesn't exist in Crystal, dropped
+- Scrafty: shed-shell doesn't exist in Crystal, dropped
+- Scraggy: shed-shell doesn't exist in Crystal, dropped
+- Sewaddle: mental-herb doesn't exist in Crystal, dropped
+- Sharpedo: deep-sea-tooth doesn't exist in Crystal, dropped
+- Shroomish: kebia-berry doesn't exist in Crystal, dropped
+- Simipour: rindo-berry doesn't exist in Crystal, dropped
+- Simisage: occa-berry doesn't exist in Crystal, dropped
+- Simisear: passho-berry doesn't exist in Crystal, dropped
+- Snorunt: babiri-berry doesn't exist in Crystal, dropped
+- Solrock: comet-shard doesn't exist in Crystal, dropped
+- Spoink: tanga-berry doesn't exist in Crystal, dropped
+- Staraptor: yache-berry doesn't exist in Crystal, dropped
+- Staravia: yache-berry doesn't exist in Crystal, dropped
+- Starly: yache-berry doesn't exist in Crystal, dropped
+- Swadloon: mental-herb doesn't exist in Crystal, dropped
+- Swellow: charti-berry doesn't exist in Crystal, dropped
+- Taillow: charti-berry doesn't exist in Crystal, dropped
+- Throh: black-belt doesn't exist in Crystal, dropped
+- Throh: expert-belt doesn't exist in Crystal, dropped
+- Toxicroak: black-sludge doesn't exist in Crystal, dropped
+- Trubbish: black-sludge doesn't exist in Crystal, dropped
+- Weavile: grip-claw doesn't exist in Crystal, dropped
+- Yanmega: wide-lens doesn't exist in Crystal, dropped

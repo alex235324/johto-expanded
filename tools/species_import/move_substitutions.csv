@@ -1,0 +1,309 @@
+id,identifier,name,type,power,class(1=status),crystal_move,reason
+252,fake-out,Fake Out,NORMAL,40,2,QUICK_ATTACK,curated
+253,uproar,Uproar,NORMAL,90,3,THRASH,curated
+254,stockpile,Stockpile,NORMAL,,1,DEFENSE_CURL,curated
+255,spit-up,Spit Up,NORMAL,,3,BODY_SLAM,curated
+256,swallow,Swallow,NORMAL,,1,RECOVER,curated
+257,heat-wave,Heat Wave,FIRE,95,3,FLAMETHROWER,"same type, nearest power (95 -> 95)"
+258,hail,Hail,ICE,,1,MIST,curated
+259,torment,Torment,DARK,,1,DISABLE,curated
+260,flatter,Flatter,DARK,,1,SWAGGER,curated
+261,will-o-wisp,Will-O-Wisp,FIRE,,1,CONFUSE_RAY,curated
+262,memento,Memento,DARK,,1,CHARM,curated
+263,facade,Facade,NORMAL,70,2,HEADBUTT,"same type, nearest power (70 -> 70)"
+264,focus-punch,Focus Punch,FIGHTING,150,2,DYNAMICPUNCH,curated
+265,smelling-salts,Smelling Salts,NORMAL,70,2,HEADBUTT,"same type, nearest power (70 -> 70)"
+266,follow-me,Follow Me,NORMAL,,1,PROTECT,curated
+267,nature-power,Nature Power,NORMAL,,1,TRI_ATTACK,curated
+268,charge,Charge,ELECTRIC,,1,FOCUS_ENERGY,curated
+269,taunt,Taunt,DARK,,1,DISABLE,curated
+270,helping-hand,Helping Hand,NORMAL,,1,FOCUS_ENERGY,curated
+271,trick,Trick,PSYCHIC_TYPE,,1,THIEF,curated
+272,role-play,Role Play,PSYCHIC_TYPE,,1,MIMIC,curated
+273,wish,Wish,NORMAL,,1,SOFTBOILED,curated
+274,assist,Assist,NORMAL,,1,METRONOME,curated
+275,ingrain,Ingrain,GRASS,,1,SYNTHESIS,curated
+276,superpower,Superpower,FIGHTING,120,2,CROSS_CHOP,"same type, nearest power (120 -> 100)"
+277,magic-coat,Magic Coat,PSYCHIC_TYPE,,1,PROTECT,curated
+278,recycle,Recycle,NORMAL,,1,FOCUS_ENERGY,curated
+279,revenge,Revenge,FIGHTING,60,2,ROLLING_KICK,"same type, nearest power (60 -> 60)"
+280,brick-break,Brick Break,FIGHTING,75,2,VITAL_THROW,"same type, nearest power (75 -> 70)"
+281,yawn,Yawn,NORMAL,,1,SING,curated
+282,knock-off,Knock Off,DARK,65,2,THIEF,curated
+283,endeavor,Endeavor,NORMAL,,2,SUPER_FANG,curated
+284,eruption,Eruption,FIRE,150,3,FIRE_BLAST,curated
+285,skill-swap,Skill Swap,PSYCHIC_TYPE,,1,MIMIC,curated
+286,imprison,Imprison,PSYCHIC_TYPE,,1,DISABLE,curated
+287,refresh,Refresh,NORMAL,,1,HEAL_BELL,curated
+288,grudge,Grudge,GHOST,,1,DESTINY_BOND,curated
+289,snatch,Snatch,DARK,,1,MIMIC,curated
+290,secret-power,Secret Power,NORMAL,70,2,HEADBUTT,"same type, nearest power (70 -> 70)"
+291,dive,Dive,WATER,80,2,SURF,curated
+292,arm-thrust,Arm Thrust,FIGHTING,15,2,DOUBLE_KICK,curated
+293,camouflage,Camouflage,NORMAL,,1,CONVERSION,curated
+294,tail-glow,Tail Glow,BUG,,1,GROWTH,curated
+295,luster-purge,Luster Purge,PSYCHIC_TYPE,95,3,PSYCHIC_M,"same type, nearest power (95 -> 90)"
+296,mist-ball,Mist Ball,PSYCHIC_TYPE,95,3,PSYCHIC_M,"same type, nearest power (95 -> 90)"
+297,feather-dance,Feather Dance,FLYING,,1,CHARM,curated
+298,teeter-dance,Teeter Dance,NORMAL,,1,SUPERSONIC,curated
+299,blaze-kick,Blaze Kick,FIRE,85,2,FIRE_PUNCH,curated
+300,mud-sport,Mud Sport,GROUND,,1,SAND_ATTACK,curated
+301,ice-ball,Ice Ball,ICE,30,2,ROLLOUT,curated
+302,needle-arm,Needle Arm,GRASS,60,2,RAZOR_LEAF,"same type, nearest power (60 -> 55)"
+303,slack-off,Slack Off,NORMAL,,1,SOFTBOILED,curated
+304,hyper-voice,Hyper Voice,NORMAL,90,3,BODY_SLAM,"same type, nearest power (90 -> 85)"
+305,poison-fang,Poison Fang,POISON,50,2,ACID,"same type, nearest power (50 -> 40)"
+306,crush-claw,Crush Claw,NORMAL,75,2,HEADBUTT,"same type, nearest power (75 -> 70)"
+307,blast-burn,Blast Burn,FIRE,150,3,FIRE_BLAST,curated
+308,hydro-cannon,Hydro Cannon,WATER,150,3,HYDRO_PUMP,curated
+309,meteor-mash,Meteor Mash,STEEL,90,2,STEEL_WING,"same type, nearest power (90 -> 70)"
+310,astonish,Astonish,GHOST,30,2,LICK,"same type, nearest power (30 -> 20)"
+311,weather-ball,Weather Ball,NORMAL,50,3,CUT,"same type, nearest power (50 -> 50)"
+312,aromatherapy,Aromatherapy,GRASS,,1,HEAL_BELL,curated
+313,fake-tears,Fake Tears,DARK,,1,SCREECH,curated
+314,air-cutter,Air Cutter,FLYING,60,3,WING_ATTACK,"same type, nearest power (60 -> 60)"
+315,overheat,Overheat,FIRE,130,3,FIRE_BLAST,"same type, nearest power (130 -> 120)"
+316,odor-sleuth,Odor Sleuth,NORMAL,,1,FORESIGHT,curated
+317,rock-tomb,Rock Tomb,ROCK,60,2,ANCIENTPOWER,"same type, nearest power (60 -> 60)"
+318,silver-wind,Silver Wind,BUG,60,3,TWINEEDLE,"same type, nearest power (60 -> 25)"
+319,metal-sound,Metal Sound,STEEL,,1,SCREECH,curated
+320,grass-whistle,Grass Whistle,GRASS,,1,SLEEP_POWDER,curated
+321,tickle,Tickle,NORMAL,,1,GROWL,curated
+322,cosmic-power,Cosmic Power,PSYCHIC_TYPE,,1,BARRIER,curated
+323,water-spout,Water Spout,WATER,150,3,HYDRO_PUMP,curated
+324,signal-beam,Signal Beam,BUG,75,3,TWINEEDLE,"same type, nearest power (75 -> 25)"
+325,shadow-punch,Shadow Punch,GHOST,60,2,SHADOW_BALL,"same type, nearest power (60 -> 80)"
+326,extrasensory,Extrasensory,PSYCHIC_TYPE,80,3,PSYCHIC_M,"same type, nearest power (80 -> 90)"
+327,sky-uppercut,Sky Uppercut,FIGHTING,85,2,SUBMISSION,"same type, nearest power (85 -> 80)"
+328,sand-tomb,Sand Tomb,GROUND,35,2,MUD_SLAP,"same type, nearest power (35 -> 20)"
+329,sheer-cold,Sheer Cold,ICE,,3,BLIZZARD,curated
+330,muddy-water,Muddy Water,WATER,90,3,SURF,"same type, nearest power (90 -> 95)"
+331,bullet-seed,Bullet Seed,GRASS,25,2,VINE_WHIP,"same type, nearest power (25 -> 35)"
+332,aerial-ace,Aerial Ace,FLYING,60,2,WING_ATTACK,"same type, nearest power (60 -> 60)"
+333,icicle-spear,Icicle Spear,ICE,25,2,POWDER_SNOW,"same type, nearest power (25 -> 40)"
+334,iron-defense,Iron Defense,STEEL,,1,BARRIER,curated
+335,block,Block,NORMAL,,1,MEAN_LOOK,curated
+336,howl,Howl,NORMAL,,1,MEDITATE,curated
+337,dragon-claw,Dragon Claw,DRAGON,80,2,DRAGONBREATH,"same type, nearest power (80 -> 60)"
+338,frenzy-plant,Frenzy Plant,GRASS,150,3,PETAL_DANCE,curated
+339,bulk-up,Bulk Up,FIGHTING,,1,MEDITATE,curated
+340,bounce,Bounce,FLYING,85,2,FLY,curated
+341,mud-shot,Mud Shot,GROUND,55,3,BONEMERANG,"same type, nearest power (55 -> 50)"
+342,poison-tail,Poison Tail,POISON,50,2,ACID,"same type, nearest power (50 -> 40)"
+343,covet,Covet,NORMAL,60,2,THIEF,curated
+344,volt-tackle,Volt Tackle,ELECTRIC,120,2,THUNDER,curated
+345,magical-leaf,Magical Leaf,GRASS,60,3,RAZOR_LEAF,"same type, nearest power (60 -> 55)"
+346,water-sport,Water Sport,WATER,,1,MIST,curated
+347,calm-mind,Calm Mind,PSYCHIC_TYPE,,1,AMNESIA,curated
+348,leaf-blade,Leaf Blade,GRASS,90,2,RAZOR_LEAF,"same type, nearest power (90 -> 55)"
+349,dragon-dance,Dragon Dance,DRAGON,,1,AGILITY,curated
+350,rock-blast,Rock Blast,ROCK,25,2,ROCK_THROW,curated
+351,shock-wave,Shock Wave,ELECTRIC,60,3,SPARK,"same type, nearest power (60 -> 65)"
+352,water-pulse,Water Pulse,WATER,60,3,BUBBLEBEAM,"same type, nearest power (60 -> 65)"
+353,doom-desire,Doom Desire,STEEL,140,3,FUTURE_SIGHT,curated
+354,psycho-boost,Psycho Boost,PSYCHIC_TYPE,140,3,PSYCHIC_M,curated
+355,roost,Roost,FLYING,,1,RECOVER,curated
+356,gravity,Gravity,PSYCHIC_TYPE,,1,MIST,curated
+357,miracle-eye,Miracle Eye,PSYCHIC_TYPE,,1,FORESIGHT,curated
+358,wake-up-slap,Wake-Up Slap,FIGHTING,70,2,VITAL_THROW,"same type, nearest power (70 -> 70)"
+359,hammer-arm,Hammer Arm,FIGHTING,100,2,CROSS_CHOP,"same type, nearest power (100 -> 100)"
+360,gyro-ball,Gyro Ball,STEEL,,2,METAL_CLAW,"same type, nearest power (60 -> 50)"
+361,healing-wish,Healing Wish,PSYCHIC_TYPE,,1,HEAL_BELL,curated
+362,brine,Brine,WATER,65,3,BUBBLEBEAM,"same type, nearest power (65 -> 65)"
+363,natural-gift,Natural Gift,NORMAL,,2,VICEGRIP,"same type, nearest power (60 -> 55)"
+364,feint,Feint,NORMAL,30,2,QUICK_ATTACK,curated
+365,pluck,Pluck,FLYING,60,2,WING_ATTACK,"same type, nearest power (60 -> 60)"
+366,tailwind,Tailwind,FLYING,,1,AGILITY,curated
+367,acupressure,Acupressure,NORMAL,,1,FOCUS_ENERGY,curated
+368,metal-burst,Metal Burst,STEEL,,2,COUNTER,curated
+369,u-turn,U-turn,BUG,70,2,TWINEEDLE,"same type, nearest power (70 -> 25)"
+370,close-combat,Close Combat,FIGHTING,120,2,CROSS_CHOP,curated
+371,payback,Payback,DARK,50,2,BITE,"same type, nearest power (50 -> 60)"
+372,assurance,Assurance,DARK,60,2,BITE,"same type, nearest power (60 -> 60)"
+373,embargo,Embargo,DARK,,1,DISABLE,curated
+374,fling,Fling,DARK,,2,BITE,"same type, nearest power (60 -> 60)"
+375,psycho-shift,Psycho Shift,PSYCHIC_TYPE,,1,MIMIC,curated
+376,trump-card,Trump Card,NORMAL,,3,SWIFT,curated
+377,heal-block,Heal Block,PSYCHIC_TYPE,,1,DISABLE,curated
+378,wring-out,Wring Out,NORMAL,,3,VICEGRIP,"same type, nearest power (60 -> 55)"
+379,power-trick,Power Trick,PSYCHIC_TYPE,,1,SHARPEN,curated
+380,gastro-acid,Gastro Acid,POISON,,1,DISABLE,curated
+381,lucky-chant,Lucky Chant,NORMAL,,1,SAFEGUARD,curated
+382,me-first,Me First,NORMAL,,1,MIRROR_MOVE,curated
+383,copycat,Copycat,NORMAL,,1,MIRROR_MOVE,curated
+384,power-swap,Power Swap,PSYCHIC_TYPE,,1,PSYCH_UP,curated
+385,guard-swap,Guard Swap,PSYCHIC_TYPE,,1,PSYCH_UP,curated
+386,punishment,Punishment,DARK,,2,BITE,"same type, nearest power (60 -> 60)"
+387,last-resort,Last Resort,NORMAL,140,2,DOUBLE_EDGE,"same type, nearest power (140 -> 120)"
+388,worry-seed,Worry Seed,GRASS,,1,LEECH_SEED,curated
+389,sucker-punch,Sucker Punch,DARK,70,2,QUICK_ATTACK,curated
+390,toxic-spikes,Toxic Spikes,POISON,,1,SPIKES,curated
+391,heart-swap,Heart Swap,PSYCHIC_TYPE,,1,PSYCH_UP,curated
+392,aqua-ring,Aqua Ring,WATER,,1,MIST,curated
+393,magnet-rise,Magnet Rise,ELECTRIC,,1,AGILITY,curated
+394,flare-blitz,Flare Blitz,FIRE,120,2,FIRE_BLAST,"same type, nearest power (120 -> 120)"
+395,force-palm,Force Palm,FIGHTING,60,2,ROLLING_KICK,"same type, nearest power (60 -> 60)"
+396,aura-sphere,Aura Sphere,FIGHTING,80,3,SUBMISSION,"same type, nearest power (80 -> 80)"
+397,rock-polish,Rock Polish,ROCK,,1,AGILITY,curated
+398,poison-jab,Poison Jab,POISON,80,2,SLUDGE_BOMB,"same type, nearest power (80 -> 90)"
+399,dark-pulse,Dark Pulse,DARK,80,3,CRUNCH,"same type, nearest power (80 -> 80)"
+400,night-slash,Night Slash,DARK,70,2,BITE,"same type, nearest power (70 -> 60)"
+401,aqua-tail,Aqua Tail,WATER,90,2,SURF,"same type, nearest power (90 -> 95)"
+402,seed-bomb,Seed Bomb,GRASS,80,2,RAZOR_LEAF,"same type, nearest power (80 -> 55)"
+403,air-slash,Air Slash,FLYING,75,3,DRILL_PECK,"same type, nearest power (75 -> 80)"
+404,x-scissor,X-Scissor,BUG,80,2,FURY_CUTTER,curated
+405,bug-buzz,Bug Buzz,BUG,90,3,MEGAHORN,curated
+406,dragon-pulse,Dragon Pulse,DRAGON,85,3,DRAGONBREATH,"same type, nearest power (85 -> 60)"
+407,dragon-rush,Dragon Rush,DRAGON,100,2,DRAGONBREATH,"same type, nearest power (100 -> 60)"
+408,power-gem,Power Gem,ROCK,80,3,ROCK_SLIDE,"same type, nearest power (80 -> 75)"
+409,drain-punch,Drain Punch,FIGHTING,75,2,SUBMISSION,curated
+410,vacuum-wave,Vacuum Wave,FIGHTING,40,3,MACH_PUNCH,curated
+411,focus-blast,Focus Blast,FIGHTING,120,3,DYNAMICPUNCH,curated
+412,energy-ball,Energy Ball,GRASS,90,3,RAZOR_LEAF,"same type, nearest power (90 -> 55)"
+413,brave-bird,Brave Bird,FLYING,120,2,DRILL_PECK,"same type, nearest power (120 -> 80)"
+414,earth-power,Earth Power,GROUND,90,3,EARTHQUAKE,"same type, nearest power (90 -> 100)"
+415,switcheroo,Switcheroo,DARK,,1,THIEF,curated
+416,giga-impact,Giga Impact,NORMAL,150,2,HYPER_BEAM,curated
+417,nasty-plot,Nasty Plot,DARK,,1,GROWTH,curated
+418,bullet-punch,Bullet Punch,STEEL,40,2,METAL_CLAW,curated
+419,avalanche,Avalanche,ICE,60,2,AURORA_BEAM,"same type, nearest power (60 -> 65)"
+420,ice-shard,Ice Shard,ICE,40,2,POWDER_SNOW,curated
+421,shadow-claw,Shadow Claw,GHOST,70,2,SHADOW_BALL,"same type, nearest power (70 -> 80)"
+422,thunder-fang,Thunder Fang,ELECTRIC,65,2,THUNDERPUNCH,curated
+423,ice-fang,Ice Fang,ICE,65,2,ICE_PUNCH,curated
+424,fire-fang,Fire Fang,FIRE,65,2,FIRE_PUNCH,curated
+425,shadow-sneak,Shadow Sneak,GHOST,40,2,LICK,curated
+426,mud-bomb,Mud Bomb,GROUND,65,3,BONE_CLUB,"same type, nearest power (65 -> 65)"
+427,psycho-cut,Psycho Cut,PSYCHIC_TYPE,70,2,PSYBEAM,"same type, nearest power (70 -> 65)"
+428,zen-headbutt,Zen Headbutt,PSYCHIC_TYPE,80,2,PSYCHIC_M,"same type, nearest power (80 -> 90)"
+429,mirror-shot,Mirror Shot,STEEL,65,3,STEEL_WING,"same type, nearest power (65 -> 70)"
+430,flash-cannon,Flash Cannon,STEEL,80,3,STEEL_WING,"same type, nearest power (80 -> 70)"
+431,rock-climb,Rock Climb,NORMAL,90,2,BODY_SLAM,"same type, nearest power (90 -> 85)"
+432,defog,Defog,FLYING,,1,HAZE,curated
+433,trick-room,Trick Room,PSYCHIC_TYPE,,1,AMNESIA,curated
+434,draco-meteor,Draco Meteor,DRAGON,130,3,OUTRAGE,curated
+435,discharge,Discharge,ELECTRIC,80,3,THUNDERPUNCH,"same type, nearest power (80 -> 75)"
+436,lava-plume,Lava Plume,FIRE,80,3,FIRE_PUNCH,"same type, nearest power (80 -> 75)"
+437,leaf-storm,Leaf Storm,GRASS,130,3,PETAL_DANCE,curated
+438,power-whip,Power Whip,GRASS,120,2,PETAL_DANCE,curated
+439,rock-wrecker,Rock Wrecker,ROCK,150,2,HYPER_BEAM,curated
+440,cross-poison,Cross Poison,POISON,70,2,SLUDGE,"same type, nearest power (70 -> 65)"
+441,gunk-shot,Gunk Shot,POISON,120,2,SLUDGE_BOMB,"same type, nearest power (120 -> 90)"
+442,iron-head,Iron Head,STEEL,80,2,STEEL_WING,"same type, nearest power (80 -> 70)"
+443,magnet-bomb,Magnet Bomb,STEEL,60,2,METAL_CLAW,"same type, nearest power (60 -> 50)"
+444,stone-edge,Stone Edge,ROCK,100,2,ROCK_SLIDE,"same type, nearest power (100 -> 75)"
+445,captivate,Captivate,NORMAL,,1,CHARM,curated
+446,stealth-rock,Stealth Rock,ROCK,,1,SPIKES,curated
+447,grass-knot,Grass Knot,GRASS,,3,RAZOR_LEAF,"same type, nearest power (60 -> 55)"
+448,chatter,Chatter,FLYING,65,3,WING_ATTACK,"same type, nearest power (65 -> 60)"
+449,judgment,Judgment,NORMAL,100,3,EGG_BOMB,"same type, nearest power (100 -> 100)"
+450,bug-bite,Bug Bite,BUG,60,2,TWINEEDLE,"same type, nearest power (60 -> 25)"
+451,charge-beam,Charge Beam,ELECTRIC,50,3,THUNDERSHOCK,"same type, nearest power (50 -> 40)"
+452,wood-hammer,Wood Hammer,GRASS,120,2,RAZOR_LEAF,"same type, nearest power (120 -> 55)"
+453,aqua-jet,Aqua Jet,WATER,40,2,WATER_GUN,curated
+454,attack-order,Attack Order,BUG,90,2,MEGAHORN,curated
+455,defend-order,Defend Order,BUG,,1,BARRIER,curated
+456,heal-order,Heal Order,BUG,,1,RECOVER,curated
+457,head-smash,Head Smash,ROCK,150,2,ROCK_SLIDE,"same type, nearest power (150 -> 75)"
+458,double-hit,Double Hit,NORMAL,35,2,DOUBLESLAP,curated
+459,roar-of-time,Roar of Time,DRAGON,150,3,OUTRAGE,curated
+460,spacial-rend,Spacial Rend,DRAGON,100,3,DRAGONBREATH,"same type, nearest power (100 -> 60)"
+461,lunar-dance,Lunar Dance,PSYCHIC_TYPE,,1,MOONLIGHT,curated
+462,crush-grip,Crush Grip,NORMAL,,2,VICEGRIP,"same type, nearest power (60 -> 55)"
+463,magma-storm,Magma Storm,FIRE,100,3,FLAMETHROWER,curated
+464,dark-void,Dark Void,DARK,,1,HYPNOSIS,curated
+465,seed-flare,Seed Flare,GRASS,120,3,SOLARBEAM,curated
+466,ominous-wind,Ominous Wind,GHOST,60,3,SHADOW_BALL,"same type, nearest power (60 -> 80)"
+467,shadow-force,Shadow Force,GHOST,120,2,SHADOW_BALL,curated
+468,hone-claws,Hone Claws,DARK,,1,SHARPEN,curated
+469,wide-guard,Wide Guard,ROCK,,1,PROTECT,curated
+470,guard-split,Guard Split,PSYCHIC_TYPE,,1,PSYCH_UP,curated
+471,power-split,Power Split,PSYCHIC_TYPE,,1,PSYCH_UP,curated
+472,wonder-room,Wonder Room,PSYCHIC_TYPE,,1,AMNESIA,curated
+473,psyshock,Psyshock,PSYCHIC_TYPE,80,3,PSYCHIC_M,curated
+474,venoshock,Venoshock,POISON,65,3,SLUDGE,"same type, nearest power (65 -> 65)"
+475,autotomize,Autotomize,STEEL,,1,AGILITY,curated
+476,rage-powder,Rage Powder,BUG,,1,SWEET_SCENT,curated
+477,telekinesis,Telekinesis,PSYCHIC_TYPE,,1,KINESIS,curated
+478,magic-room,Magic Room,PSYCHIC_TYPE,,1,AMNESIA,curated
+479,smack-down,Smack Down,ROCK,50,2,ROCK_THROW,"same type, nearest power (50 -> 50)"
+480,storm-throw,Storm Throw,FIGHTING,60,2,ROLLING_KICK,"same type, nearest power (60 -> 60)"
+481,flame-burst,Flame Burst,FIRE,70,3,FIRE_PUNCH,"same type, nearest power (70 -> 75)"
+482,sludge-wave,Sludge Wave,POISON,95,3,SLUDGE_BOMB,"same type, nearest power (95 -> 90)"
+483,quiver-dance,Quiver Dance,BUG,,1,GROWTH,curated
+484,heavy-slam,Heavy Slam,STEEL,,2,METAL_CLAW,"same type, nearest power (60 -> 50)"
+485,synchronoise,Synchronoise,PSYCHIC_TYPE,120,3,PSYCHIC_M,"same type, nearest power (120 -> 90)"
+486,electro-ball,Electro Ball,ELECTRIC,,3,SPARK,"same type, nearest power (60 -> 65)"
+487,soak,Soak,WATER,,1,MIST,curated
+488,flame-charge,Flame Charge,FIRE,50,2,EMBER,"same type, nearest power (50 -> 40)"
+489,coil,Coil,POISON,,1,SHARPEN,curated
+490,low-sweep,Low Sweep,FIGHTING,65,2,VITAL_THROW,"same type, nearest power (65 -> 70)"
+491,acid-spray,Acid Spray,POISON,40,3,ACID,curated
+492,foul-play,Foul Play,DARK,95,2,CRUNCH,"same type, nearest power (95 -> 80)"
+493,simple-beam,Simple Beam,NORMAL,,1,DISABLE,curated
+494,entrainment,Entrainment,NORMAL,,1,MIMIC,curated
+495,after-you,After You,NORMAL,,1,MIMIC,curated
+496,round,Round,NORMAL,60,3,VICEGRIP,"same type, nearest power (60 -> 55)"
+497,echoed-voice,Echoed Voice,NORMAL,40,3,POUND,"same type, nearest power (40 -> 40)"
+498,chip-away,Chip Away,NORMAL,70,2,HEADBUTT,"same type, nearest power (70 -> 70)"
+499,clear-smog,Clear Smog,POISON,50,3,ACID,"same type, nearest power (50 -> 40)"
+500,stored-power,Stored Power,PSYCHIC_TYPE,20,3,CONFUSION,"same type, nearest power (20 -> 50)"
+501,quick-guard,Quick Guard,FIGHTING,,1,DETECT,curated
+502,ally-switch,Ally Switch,PSYCHIC_TYPE,,1,TELEPORT,curated
+503,scald,Scald,WATER,80,3,WATERFALL,"same type, nearest power (80 -> 80)"
+504,shell-smash,Shell Smash,NORMAL,,1,SWORDS_DANCE,curated
+505,heal-pulse,Heal Pulse,PSYCHIC_TYPE,,1,RECOVER,curated
+506,hex,Hex,GHOST,65,3,SHADOW_BALL,"same type, nearest power (65 -> 80)"
+507,sky-drop,Sky Drop,FLYING,60,2,FLY,curated
+508,shift-gear,Shift Gear,STEEL,,1,AGILITY,curated
+509,circle-throw,Circle Throw,FIGHTING,60,2,ROLLING_KICK,"same type, nearest power (60 -> 60)"
+510,incinerate,Incinerate,FIRE,60,3,FLAME_WHEEL,"same type, nearest power (60 -> 60)"
+511,quash,Quash,DARK,,1,DISABLE,curated
+512,acrobatics,Acrobatics,FLYING,55,2,WING_ATTACK,"same type, nearest power (55 -> 60)"
+513,reflect-type,Reflect Type,NORMAL,,1,CONVERSION,curated
+514,retaliate,Retaliate,NORMAL,70,2,HEADBUTT,"same type, nearest power (70 -> 70)"
+515,final-gambit,Final Gambit,FIGHTING,,3,COUNTER,curated
+516,bestow,Bestow,NORMAL,,1,BATON_PASS,curated
+517,inferno,Inferno,FIRE,100,3,FLAMETHROWER,"same type, nearest power (100 -> 95)"
+518,water-pledge,Water Pledge,WATER,80,3,WATERFALL,"same type, nearest power (80 -> 80)"
+519,fire-pledge,Fire Pledge,FIRE,80,3,FIRE_PUNCH,"same type, nearest power (80 -> 75)"
+520,grass-pledge,Grass Pledge,GRASS,80,3,RAZOR_LEAF,"same type, nearest power (80 -> 55)"
+521,volt-switch,Volt Switch,ELECTRIC,70,3,SPARK,"same type, nearest power (70 -> 65)"
+522,struggle-bug,Struggle Bug,BUG,50,3,TWINEEDLE,"same type, nearest power (50 -> 25)"
+523,bulldoze,Bulldoze,GROUND,60,2,BONE_CLUB,"same type, nearest power (60 -> 65)"
+524,frost-breath,Frost Breath,ICE,60,3,AURORA_BEAM,"same type, nearest power (60 -> 65)"
+525,dragon-tail,Dragon Tail,DRAGON,60,2,DRAGONBREATH,"same type, nearest power (60 -> 60)"
+526,work-up,Work Up,NORMAL,,1,GROWTH,curated
+527,electroweb,Electroweb,ELECTRIC,55,3,SPARK,"same type, nearest power (55 -> 65)"
+528,wild-charge,Wild Charge,ELECTRIC,90,2,THUNDERBOLT,"same type, nearest power (90 -> 95)"
+529,drill-run,Drill Run,GROUND,80,2,BONE_CLUB,"same type, nearest power (80 -> 65)"
+530,dual-chop,Dual Chop,DRAGON,40,2,TWISTER,"same type, nearest power (40 -> 40)"
+531,heart-stamp,Heart Stamp,PSYCHIC_TYPE,60,2,PSYBEAM,"same type, nearest power (60 -> 65)"
+532,horn-leech,Horn Leech,GRASS,75,2,GIGA_DRAIN,curated
+533,sacred-sword,Sacred Sword,FIGHTING,90,2,SUBMISSION,"same type, nearest power (90 -> 80)"
+534,razor-shell,Razor Shell,WATER,75,2,WATERFALL,"same type, nearest power (75 -> 80)"
+535,heat-crash,Heat Crash,FIRE,,2,FLAME_WHEEL,"same type, nearest power (60 -> 60)"
+536,leaf-tornado,Leaf Tornado,GRASS,65,3,RAZOR_LEAF,"same type, nearest power (65 -> 55)"
+537,steamroller,Steamroller,BUG,65,2,TWINEEDLE,"same type, nearest power (65 -> 25)"
+538,cotton-guard,Cotton Guard,GRASS,,1,BARRIER,curated
+539,night-daze,Night Daze,DARK,85,3,CRUNCH,"same type, nearest power (85 -> 80)"
+540,psystrike,Psystrike,PSYCHIC_TYPE,100,3,PSYCHIC_M,"same type, nearest power (100 -> 90)"
+541,tail-slap,Tail Slap,NORMAL,25,2,DOUBLESLAP,curated
+542,hurricane,Hurricane,FLYING,110,3,DRILL_PECK,"same type, nearest power (110 -> 80)"
+543,head-charge,Head Charge,NORMAL,120,2,DOUBLE_EDGE,"same type, nearest power (120 -> 120)"
+544,gear-grind,Gear Grind,STEEL,50,2,METAL_CLAW,"same type, nearest power (50 -> 50)"
+545,searing-shot,Searing Shot,FIRE,100,3,FLAMETHROWER,"same type, nearest power (100 -> 95)"
+546,techno-blast,Techno Blast,NORMAL,120,3,DOUBLE_EDGE,"same type, nearest power (120 -> 120)"
+547,relic-song,Relic Song,NORMAL,75,3,HEADBUTT,"same type, nearest power (75 -> 70)"
+548,secret-sword,Secret Sword,FIGHTING,85,3,SUBMISSION,"same type, nearest power (85 -> 80)"
+549,glaciate,Glaciate,ICE,65,3,AURORA_BEAM,"same type, nearest power (65 -> 65)"
+550,bolt-strike,Bolt Strike,ELECTRIC,130,2,THUNDER,"same type, nearest power (130 -> 120)"
+551,blue-flare,Blue Flare,FIRE,130,3,FIRE_BLAST,"same type, nearest power (130 -> 120)"
+552,fiery-dance,Fiery Dance,FIRE,80,3,FIRE_PUNCH,"same type, nearest power (80 -> 75)"
+553,freeze-shock,Freeze Shock,ICE,140,2,BLIZZARD,"same type, nearest power (140 -> 120)"
+554,ice-burn,Ice Burn,ICE,140,3,BLIZZARD,"same type, nearest power (140 -> 120)"
+555,snarl,Snarl,DARK,55,3,BITE,"same type, nearest power (55 -> 60)"
+556,icicle-crash,Icicle Crash,ICE,85,2,ICE_PUNCH,"same type, nearest power (85 -> 75)"
+557,v-create,V-create,FIRE,180,2,FIRE_BLAST,"same type, nearest power (180 -> 120)"
+558,fusion-flare,Fusion Flare,FIRE,100,3,FLAMETHROWER,"same type, nearest power (100 -> 95)"
+559,fusion-bolt,Fusion Bolt,ELECTRIC,100,2,THUNDERBOLT,"same type, nearest power (100 -> 95)"

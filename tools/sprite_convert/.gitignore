@@ -1,0 +1,5 @@
+# local venv, downloaded sources, staging output
+.venv/
+source/
+out/
+__pycache__/

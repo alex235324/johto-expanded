@@ -1,0 +1,10 @@
+	db "Plasma@" ; species name
+	dw 100, 7 ; height, weight
+
+	db   "Its electric-like"
+	next "body can enter"
+	next "some kinds of"
+
+	page "machines and take"
+	next "control in order"
+	next "to make mischief.@"
