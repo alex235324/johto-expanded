@@ -2,7 +2,7 @@
 
 This lists what is different from the base ROM: pret's [pokecrystal](https://github.com/pret/pokecrystal) disassembly at commit `95f3d3c09` (2025-11-18), which builds the original English Crystal.
 
-It covers the current playable build, branch `claude/pokemon-menu-sprites-bcf65a` at `e7b26d7a5`. That branch includes every other line of work: `master` → `expand-move-ID` (= `dev`) → sprite converter → encounters/Pokégear → eccentric trader → menu sprites.
+It covers `master` at `d2702492a` (2026-11-19). That includes every other line of work: `master` → `expand-move-ID` (= `dev`) → sprite converter → encounters/Pokégear → eccentric trader → menu sprites → QoL pass → rival rewrite.
 
 The changes come in three layers:
 
@@ -10,7 +10,9 @@ The changes come in three layers:
 2. **pokecrystal16 16-bit index engine** (`expand-mon-ID` + `expand-move-ID`): no gameplay change on its own
 3. **This hack's content**: new species, mechanics, NPCs and balance changes
 
-> ⚠️ **Save compatibility:** saves from vanilla Crystal, or from builds made before the Pokédex flags moved to SRAM, do **not** load. Most changes made after that keep the save layout.
+> ⚠️ **Save compatibility:** saves from vanilla Crystal, or from builds made before the Pokédex flags moved to SRAM, do **not** load. The bigger bag and 24 PC boxes change the save layout again, so saves from before those commits are not recognised either (the title screen offers New Game). Most other changes keep the save layout.
+>
+> **Build flags:** most QoL changes sit behind `QOL_*` flags in `constants/qol_flags.asm`, all on by default. Turning one off (e.g. `make QOL_FLAGS="-DQOL_MORE_BOXES=0"`) builds that part as before.
 
 ---
 
@@ -24,13 +26,22 @@ The changes come in three layers:
 | Battle | **Physical/Special split** by move (Gen 4+); move category shown in battle and on the move screen |
 | Battle | **Gen 5 experience formula** (scales with the level difference) |
 | Battle | B in a wild battle jumps to RUN, and B again runs |
+| Moves | 57 moves use **Gen 8** power, accuracy and PP |
+| Exp. | **All-party Exp. Share** (Gen 6 style), toggled with the Exp.Share item |
+| Evolution | Trade evolutions happen on level-up (holding the item, or at level 37) |
+| Legendaries | Suicune roams; uncaught legendaries respawn after the Elite Four; a locator NPC on every Center 2F |
+| Wild | Blissey 5% in the grass on every route numbered a multiple of 3 |
+| Storage | Bag pockets 30/16/30, START sorts a pocket; 24 PC boxes |
+| TMs | Reusable |
+| QoL | Faster Centers and saves, Repel re-use prompt, field poison stops at 1 HP, fewer phone calls, safer Yes/No defaults |
+| Rival | Rewritten as a spoiled heir with a Team Rocket father; he trashes Elm's Lab and gets a Gible |
 | Trainers | Every trainer Pokémon levelled to `floor(level^1.05)`, evolved and given moves to match |
 | Gyms | Every gym leader has a Gen 3–5 Pokémon swapped in, plus one extra Pokémon |
 | Wild | Gen 3–5 species in grass/water/fishing/trees, placed by map theme; legendaries are 1% endgame encounters |
 | Pokégear | Map Card from the start; new **GEN** card picks which generation's wild Pokémon appear |
 | Overworld | **Running Shoes** (hold B); **cut trees stay cut** |
 | Starters | 15 starters (Kanto, Johto, Hoenn, Sinnoh, Unova) in Elm's Lab; a bonus pick for every win against Red |
-| NPCs | Move Reminder (Pokémon Center 2F); New Bark Town Collector who buys Pokémon for tokens |
+| NPCs | Move Reminder/Deleter and legendary locator (Pokémon Center 2F); New Bark Town Collector who buys Pokémon for tokens |
 | Dance Theater | Two new Kimono Girls (Leafeon, Glaceon); HM03 needs all seven wins |
 | Marts | Daily TM lineups at Goldenrod 5F, post-game TMs at Celadon 3F, themed TMs in 20 Poké Marts |
 | Text | Mixed-case text everywhere ("Pokémon", "Potion"); choice of Normal, Narrow or Bold font |
@@ -124,6 +135,9 @@ Lets the game hold more than 253 species and 255 moves. Each Pokémon/move has a
 - The battle move menu and the party move screen show the category (`phy` / `spc` / `sta`) where vanilla showed `TYPE/`.
 - **Gen 5 experience formula:** `exp = floor(b·L/5 · ((2L+10)/(L+Lp+10))^2.5) + 1`, so beating higher-level Pokémon gives more and lower-level ones less. Trainer battles, traded Pokémon and Lucky Egg each give ×1.5. Capped at 65,535.
 - **B in the battle menu:** in a wild battle you can run from, B moves the cursor to RUN; pressing B again runs. In trainer battles, link battles or when trapped, B does nothing.
+- **Gen 8 move stats** (`QOL_MODERN_MOVES`): 57 moves use Sword/Shield power, accuracy and PP, e.g. Flamethrower/Thunderbolt/Ice Beam/Surf 90, Fire Blast/Blizzard/Thunder/Hydro Pump 110, Outrage 120, Toxic 90%. Effects and types are unchanged. Overrides live in `data/moves/modern_moves.asm`; `moves.asm` keeps the vanilla values.
+- **All-party Exp. Share** (`QOL_EXP_SHARE_ALL`): Pokémon that battled share exp. as before; every other non-fainted party member gets half the full amount each, plus half stat exp. Using the Exp.Share from the bag turns it off or on; off means vanilla held-item behaviour.
+- **Trade evolutions without trading** (`QOL_SOLO_TRADE_EVOS`): item trade evolutions happen on level-up while holding the item (the item is used up); itemless ones happen at level 37+. Everstone still blocks it; link trades work as before.
 
 ### 3.4 Trainers
 
@@ -137,13 +151,22 @@ Lets the game hold more than 253 species and 255 moves. Each Pokémon/move has a
 - **Legendaries** are 1% encounters in the highest-level map that fits them.
 - Levels, encounter rates and odds are unchanged from vanilla.
 - **Pokégear GEN card:** a fifth Pokégear card picks the wild Pokémon set: **DEFAULT** (the mixed tables above) or **GEN 1** to **GEN 5** (only that generation's species). Options unlock at 1, 3, 5, 7 and 8 badges (Johto and Kanto both count). The choice is saved. Swarms are skipped in Gen modes. The Pokédex area map, phone callers, Oak's radio show, the Bug-Catching Contest and the roaming beasts still use the default tables.
+- **Blissey routes** (`BLISSEY_EVERY_THIRD_ROUTE`): on Routes 3, 6, 9, ... 45, each grass encounter has a 5% chance to be a Blissey at the rolled slot's level. Applies with DEFAULT and GEN 2 sets. Done in `ChooseWildEncounter`, so the Pokédex area map doesn't list it.
+- **Roaming Suicune** (`QOL_ROAMING_SUICUNE`): in Tin Tower Suicune flees instead of battling and roams Johto at level 40 from Route 38. Eusine's lines are updated; the Rainbow Wing and Ho-Oh work as before.
+- **Legendary respawns** (`QOL_RESPAWN_LEGENDARIES`): each Elite Four win brings back Lugia and Ho-Oh, and puts fainted roaming beasts back to roaming, unless that species is already caught.
 
 ### 3.6 Overworld and items
 
 - **Running Shoes:** the Guide Gent in Cherrygrove gives Running Shoes instead of the Map Card. Hold B on foot to move at bike speed (the walking animation speeds up too). Saves that already did the tour get the shoes from him in his house.
 - **Map Card from the start:** Mom's Pokégear already has the map.
 - **Permanent Cut:** every cut tree (40 of them) stays cut, tracked by its own event flag. Cut grass still grows back.
-- **Buy/sell quantity:** each press changes the quantity by one; holding a direction no longer auto-repeats.
+- **Buy/sell quantity:** each press changes the quantity by one; holding a direction no longer auto-repeats. The buy picker tops out at what the player can afford (`QOL_MART_MAX_AFFORDABLE`).
+- **Reusable TMs** (`QOL_REUSABLE_TMS`): teaching a TM doesn't use it up, the TM pocket shows no count, and marts sell at most one of each TM.
+- **Bigger bag** (`QOL_BIGGER_BAG`): Items 30 (was 20), Balls 16 (was 12), Key Items 30 (was 25). PC item storage stays at 50.
+- **Bag sort** (`QOL_BAG_SORT`): START sorts the Items, Balls or Key Items pocket by item ID.
+- **24 PC boxes** (`QOL_MORE_BOXES`, was 14): needs 64 KB of SRAM (8 banks). mGBA handles it; real MBC3 hardware only has 4 RAM banks.
+- **Repel re-use:** when a Repel wears off and the bag has another of the same kind, the game asks "Use another?".
+- **Field poison** (`QOL_POISON_SURVIVE`): stops at 1 HP and cures itself (Gen 5 behaviour); it can no longer white the player out.
 - **TM shops:**
   - Goldenrod Dept. Store 5F: a different 14-TM lineup each day of the week (the elemental punches, Headbutt and Rock Smash plus nine daily specials; Saturday is the strongest). Headbutt and Rock Smash are sold from the start.
   - Celadon Dept. Store 3F: post-game TMs (Hyper Beam, Earthquake, Psychic, Thunder, Blizzard, Fire Blast, Shadow Ball, ...).
@@ -154,11 +177,14 @@ Lets the game hold more than 253 species and 255 moves. Each Pokémon/move has a
 
 - **Elm's Lab:** the lab is wider and holds **15 starter balls**: Bulbasaur, Charmander, Squirtle, Chikorita, Cyndaquil, Totodile, Treecko, Torchic, Mudkip, Turtwig, Chimchar, Piplup, Snivy, Tepig, Oshawott. Pick any one as your starter.
 - **Bonus starters from Red:** Red can be rematched in Silver Cave once beaten. Each win gives one pick of another starter from Elm's tables (level 5 with a Berry, sent to the PC if the party is full). The first win saves the game before the credits so the pick isn't lost.
-- **Move Reminder:** a receptionist on every Pokémon Center 2F re-teaches, for free, any level-up move a Pokémon has forgotten or skipped (any move in its learnset at or below its level).
-- **New Bark Town Collector:** a new house in New Bark Town. The eccentric collector buys Pokémon for **Collector Tokens** (up to 9,999). The offer is the species' value plus bonuses for level and happiness, doubled for shinies (`data/events/collector_values.asm`). Tokens buy items in three categories:
+- **Rival:** rewritten as a smug nepo baby whose Team Rocket father gets him any Pokémon he wants. He doesn't steal a starter: none of the 15 were good enough, so he trashes Elm's Lab and his father gets him a Gible. Every rival scene, the lab officer, Elm's aide, the Rocket B2F grunt and the Dragon Shrine elder are rewritten to match.
+- **Move Reminder:** a receptionist on every Pokémon Center 2F re-teaches, for free, any level-up move a Pokémon has forgotten or skipped (any move in its learnset at or below its level). With `QOL_CENTER_MOVE_DELETER` she opens with "Remember a move / Forget a move"; forgetting uses the Blackthorn Move Deleter's flow (he is unchanged).
+- **Legendary locator** (`QOL_LEGENDARY_LOCATOR`): a gentleman behind the top-left counter of every Pokémon Center 2F says where each roaming legendary (Raikou, Entei, Suicune) was last seen.
+- **New Bark Town Collector:** a new house in New Bark Town. The eccentric collector buys Pokémon for **Collector Tokens** (up to 9,999). The offer is `base + floor(level/20) + min(5, floor(max(0, happiness − 70)/37))`, doubled for shinies, so 140 at most (`data/events/collector_values.asm`). Tokens buy items in three categories:
   - Held items: Leftovers, Lucky Egg, King's Rock, Scope Lens, Focus Band, type-boosting items, ...
-  - Training: Rare Candy, PP Up, vitamins, Max Revive, Max Elixer
+  - Training: Rare Candy (10 Tokens), PP Up and vitamins (8), Max Revive, Max Elixer
   - Special: Master Ball, evolution stones, Up-Grade, Dragon Scale, ...
+  - Selling his items at a Mart pays at most 50 yen per Token they cost; buy prices are unchanged.
 - **Dance Theater (Ecruteak):** two new Kimono Girls, **Hana** (Leafeon) and **Yuki** (Glaceon), join the five vanilla ones so all seven Gen 1–4 eeveelutions appear. The Gentleman gives HM03 Surf only after all seven are beaten.
 
 ### 3.8 Text, fonts and menus
@@ -168,12 +194,19 @@ Lets the game hold more than 253 species and 255 moves. Each Pokémon/move has a
 - **Menu Account removed:** the start menu's description box option is gone; the box is always off. The start menu is one tile wider.
 - **Shortened intro:** after picking boy/girl, the game sets the clock and asks for your name. Oak's speech and the Wooper demonstration are gone.
 
-### 3.9 Bug fixes made in this hack
+### 3.9 Pacing and prompts
+
+- **Faster Pokémon Center** (`QOL_FAST_POKECENTER`): no time-of-day welcome, one box for healed + goodbye, script pauses removed, heal machine places balls every 10 frames (was 30). With `QOL_NURSE_TURN_AWAY` the player then turns away, so mashing A doesn't restart her dialogue.
+- **Faster save** (`QOL_FAST_SAVE`): the game carries on while the save jingle plays.
+- **Fewer phone calls** (`QOL_FEWER_PHONE_CALLS`): 25% call chance (was 50%) and at least an hour between calls. With `QOL_PHONE_REMATCH_MARKS` the Pokégear phone list shows "!" next to contacts with a rematch or gift waiting.
+- **Safer Yes/No defaults:** at a level-up, "delete an older move?" and "stop learning?" open on No, so mashing A loops between them instead of skipping the new move. Shift mode's "Will <PLAYER> change Pokémon?" opens on No (`QOL_SHIFT_DEFAULT_NO`). TMs, the Move Tutor and the Move Reminder keep the vanilla defaults.
+
+### 3.10 Bug fixes made in this hack
 
 - Hana and Yuki's parties were loading the Twins' teams.
 - Mart price buffer overflow for lists longer than 10 items.
 
-### 3.10 Temporary / debug
+### 3.11 Temporary / debug
 
 - ⚠️ **Route 27:** the ledge south of the Sandstorm House is removed for testing (commit `a3c0406d0`, marked DEBUG). Revert before a release.
 
