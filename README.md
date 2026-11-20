@@ -15,7 +15,7 @@ The cliff notes. [CHANGES.md](CHANGES.md) has the details.
 
 ### Story & characters
 
-- **Rival:** a smug nepo baby whose Team Rocket father gets him any Pokémon he wants. None of the 15 starters were
+- **Rival:** a smug Rocket executive's son whose Team Rocket father gets him any Pokémon he wants. None of the 15 starters were
   good enough, so he trashes Elm's Lab and his father gets him a Gible.
 - **Elm's Lab:** 15 starters from Kanto, Johto, Hoenn, Sinnoh and Unova. Beat Red in Silver Cave for a bonus pick
   each time.
